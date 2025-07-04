@@ -1,0 +1,38 @@
+.main {
+  height: 100vh;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px; /* Space above navbar */
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.nav button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav button:hover {
+  transform: scale(1.1);
+}
